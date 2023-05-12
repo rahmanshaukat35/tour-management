@@ -7,6 +7,7 @@ import heroVideo from '../assets/images/hero-video.mp4';
 import Subtitle from '../shared/Subtitle';
 import worldImg from '../assets/images/world.png';
 import SearchBar from '../shared/SearchBar/SearchBar';
+import ServiceList from '../services/ServiceList';
 const Home = () => {
 	return (
 		<>
@@ -55,4 +56,15 @@ const Home = () => {
 			{/* ========Hero section end======== */}
 			<Container>
 				<Row>
-					<Col lg=
+					<Col lg='3'>
+						<h5 className='services__subtitle'>What we serve</h5>
+						<h2 className='services__title'>We offer our best services</h2>
+					</Col>
+					<ServiceList />
+				</Row>
+			</Container>
+		</>
+	);
+};
+
+export default Home;
